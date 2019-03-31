@@ -1,0 +1,56 @@
+body {
+	font-family: $regular;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+	padding: 0;
+	margin: 0;
+	color: $dark;
+}
+
+.section-title__h2 {
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.section-title__h2:after {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 110px;
+    height: 3px;
+    content: '';
+    transform: translateX(-50%);
+    background: $blue;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+.btn {
+	min-width: 232px;
+	max-width: 368px;
+	height: 54px;
+	font-family: $demi;
+	background: $white;
+	color: $pink;
+	border: 1px solid $pink;
+	border-radius: 100px;
+	outline: none;
+	cursor: pointer;
+	&:hover:not(.tabs__button--current) {
+		background: rgba($pink, .8);
+		border: 1px solid rgba($pink, .8);
+		color: $white;
+	}
+}
+.tabs__button--current {
+	cursor: default;
+	background: $pink;
+	color: $white;
+}

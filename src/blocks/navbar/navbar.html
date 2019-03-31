@@ -1,0 +1,87 @@
+<nav class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav__list nav__list--desktop">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="nav__iteme">
+                        <a href="#" class="nav__link">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Примеры работ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    
+                </div>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" onclick="myFunction();">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner horizontal"></div>
+                  <div class="spinner diagonal part-2"></div>
+                </label>
+                <span class="">Меню</span>
+                <!-- <a href="javascript:void(0);" class="" onclick="myFunction();">Мобильное меню</a> -->
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="mobileNav">
+    <ul id="mobileNavList">
+        <li class="nav__item mobile-nav__item">
+            <a href="#" class="nav__link">
+                Главная
+            </a>
+        </li>
+        <li class="nav__item mobile-nav__item">
+            <a href="#" class="nav__link">
+                О компании
+            </a>
+        </li>
+        <li class="nav__item mobile-nav__item">
+            <a href="#" class="nav__link">
+                Услуги
+            </a>
+        </li>
+        <li class="nav__item mobile-nav__item">
+            <a href="#" class="nav__link">
+                Примеры работ
+            </a>
+        </li>
+        <li class="nav__item mobile-nav__item">
+            <a href="#" class="nav__link">
+                Контакты
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    function myFunction() {
+        var mobileNav = document.getElementById("mobileNav");
+        if (mobileNav.style.display === "block") {
+            mobileNav.style.display = "none";
+        } else {
+            mobileNav.style.display = "block";
+        }
+    }
+</script>
