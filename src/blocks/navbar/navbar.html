@@ -1,4 +1,4 @@
-<nav class="nav">
+<nav class="nav nav-desktop">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -29,52 +29,54 @@
                         </a>
                     </li>
                 </ul>
-                <div>
-                    
+                <div class="hamburger hamburger--collapse">
+                    <div class="hamburger-box" onclick="myFunction();">
+                        <div class="hamburger-inner">
+                            <span class="">Меню</span>
+                        </div>
+                    </div>
                 </div>
-                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" onclick="myFunction();">
-                <label for="openSidebarMenu" class="sidebarIconToggle">
-                  <div class="spinner diagonal part-1"></div>
-                  <div class="spinner horizontal"></div>
-                  <div class="spinner diagonal part-2"></div>
-                </label>
-                <span class="">Меню</span>
-                <!-- <a href="javascript:void(0);" class="" onclick="myFunction();">Мобильное меню</a> -->
-
-
             </div>
         </div>
     </div>
 </nav>
-<div id="mobileNav">
-    <ul id="mobileNavList">
-        <li class="nav__item mobile-nav__item">
-            <a href="#" class="nav__link">
-                Главная
-            </a>
-        </li>
-        <li class="nav__item mobile-nav__item">
-            <a href="#" class="nav__link">
-                О компании
-            </a>
-        </li>
-        <li class="nav__item mobile-nav__item">
-            <a href="#" class="nav__link">
-                Услуги
-            </a>
-        </li>
-        <li class="nav__item mobile-nav__item">
-            <a href="#" class="nav__link">
-                Примеры работ
-            </a>
-        </li>
-        <li class="nav__item mobile-nav__item">
-            <a href="#" class="nav__link">
-                Контакты
-            </a>
-        </li>
+<div id="mobileNav" class="nav-mobile" style="display: none;">
+    <nav class="">
+        <ul class="nav-mobile__list">
+            <li class="nav-mobile__item">
+                <a href="#" class="nav-mobile__link">
+                    Главная
+                </a>
+            </li>
+            <li class="nav-mobile__item">
+                <a href="#" class="nav-mobile__link">
+                    О компании
+                </a>
+            </li>
+            <li class="nav-mobile__item">
+                <a href="#" class="nav-mobile__link">
+                    Услуги
+                </a>
+            </li>
+            <li class="nav-mobile__item">
+                <a href="#" class="nav-mobile__link">
+                    Примеры работ
+                </a>
+            </li>
+            <li class="nav-mobile__item">
+                <a href="#" class="nav-mobile__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="soc-networks">
+        <li class="soc-networks__item"><a class="soc-networks__link" href="#">vk</a></li>
+        <li class="soc-networks__item"><a class="soc-networks__link" href="#">fb</a></li>
+        <li class="soc-networks__item"><a class="soc-networks__link" href="#">inst</a></li>
     </ul>
 </div>
+
 <script>
     function myFunction() {
         var mobileNav = document.getElementById("mobileNav");
