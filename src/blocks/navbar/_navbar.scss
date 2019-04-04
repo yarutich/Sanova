@@ -68,6 +68,17 @@
     position: relative;
     z-index: 99;
 }
+.hamburger.is-active .hamburger-name {
+    color: $blue;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: $blue;
+}
+.hamburger.is-active + .main-phone-number a {
+    color: $blue;
+}
 .hamburger-name {
     font-family: $demi;
     font-size: 14px;
@@ -78,7 +89,7 @@
 .main-phone-number a {
     font-family: $demi;
     font-size: 16px;
-    color: $blue;
+    color: $white;
     text-decoration: none;
 }
 .soc-networks {
@@ -96,8 +107,12 @@
     padding: 5px;
     background: $white;
     border-radius: 50px;
+    &:hover {
+        opacity: .9;
+    }
 }
 .soc-networks__icon {
+    fill: $blue;
     height: 14px;
     width: 18px;
 }
@@ -115,7 +130,9 @@
     height: 15px;
     width: 15px;
 }
-
+.phone-numbers__icon.letter {
+    fill: $white;
+}
 @media screen and (max-width: 991px) {
     .nav__item {
         padding: 0 30px;
