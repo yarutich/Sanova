@@ -3,14 +3,8 @@
     align-items: center;
     height: 60px;
 }
-.nav__list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-.nav-mobile__list {
-    padding: 60px 0;
-    position: absolute;
+.nav-mobile__inner {
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -19,9 +13,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style: none;
     background: $blue;
     z-index: 1;
+}
+.nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-mobile-line {
+    height: 65px;
+    position: relative;
+    z-index: 100;
+    padding: 0 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: $blue;
+}
+.nav-mobile__list {
+    padding: 60px 0;
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid $white;
     .nav-mobile__item {
         padding-bottom: 28px;
         &:last-child {
@@ -29,13 +43,11 @@
         }
     }
 }
-
 .nav-mobile__link {
     font-family: $demi;
     text-decoration: none;
     font-size: 18px;
     color: $white;
-
 }
 .nav__item {
     padding: 0 43px;
@@ -52,8 +64,57 @@
     color: $dark;
     text-decoration: none;
 }
-
-
+.hamburger {
+    position: relative;
+    z-index: 99;
+}
+.hamburger-name {
+    font-family: $demi;
+    font-size: 14px;
+    color: $white;
+    position: relative;
+    left: 25px;
+}
+.main-phone-number a {
+    font-family: $demi;
+    font-size: 16px;
+    color: $blue;
+    text-decoration: none;
+}
+.soc-networks {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.soc-networks__item {
+    padding-right: 7px;
+    &:last-child {
+        padding: 0;
+    }
+}
+.soc-networks__link {
+    padding: 5px;
+    background: $white;
+    border-radius: 50px;
+}
+.soc-networks__icon {
+    height: 14px;
+    width: 18px;
+}
+.phone-numbers {
+    list-style: none;
+    text-align: center;
+}
+.phone-numbers__link {
+    font-family: $demi;
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+}
+.phone-numbers__icon {
+    height: 15px;
+    width: 15px;
+}
 
 @media screen and (max-width: 991px) {
     .nav__item {
@@ -75,15 +136,15 @@
     }
 }
 @media screen and (max-width: 575px) {
+    .nav {
+        display: none;
+    }
     .nav__list--desktop {
         display: none;
     }
-    .nav {
-        background: $blue;
-    }
 }
 @media screen and (min-width: 575px) {
-    .hamburger {
+    .nav-mobile-line {
         display: none;
     }
 }
