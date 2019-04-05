@@ -94,8 +94,10 @@
 }
 .soc-networks {
     display: flex;
-    justify-content: center;
     list-style: none;
+}
+.nav .soc-networks {
+    justify-content: center;
 }
 .soc-networks__item {
     padding-right: 7px;
@@ -104,7 +106,6 @@
     }
 }
 .soc-networks__link {
-    padding: 5px;
     background: $white;
     border-radius: 50px;
     &:hover {
@@ -113,8 +114,8 @@
 }
 .soc-networks__icon {
     fill: $blue;
-    height: 14px;
-    width: 18px;
+    height: 12px;
+    width: 12px;
 }
 .phone-numbers {
     list-style: none;
