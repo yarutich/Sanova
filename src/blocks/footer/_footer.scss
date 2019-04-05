@@ -1,6 +1,17 @@
+.bottombar {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: $blue;
+}
+.bottombar .phone-numbers__link {
+    font-size: 14px;
+}
+.bottombar .nav__link {
+    color: $white;
+}
 .footbar {
     padding: 25px 0 70px 0;
-
     color: $light;
     background: $dark;
 }
@@ -66,8 +77,65 @@
     justify-content: flex-start;
     margin-top: 50px;
 }
+
 .soc-networks__link {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.phone-numbers__icon.geo,
+.phone-numbers__icon.city {
+    fill: $white;
+}
+
+@media screen and (max-width: 1199px) {
+    .bottombar .nav__item {
+        padding: 0 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bottombar .nav__link {
+        font-size: 14px;
+    }
+    .bottombar .nav__item {
+        padding: 0 12px;
+    }
+    .bottombar .phone-numbers__icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bottombar .nav__link {
+        font-family: $demi;
+    }
+    .physical-faces,
+    .legal-faces {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bottombar .nav__item {
+        padding: 0 7px;
+    }
+    .footbar .soc-networks {
+        & .soc-networks__icon {
+            fill: $dark;
+        }
+    }
+    .physical-faces,
+    .legal-faces {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .footbar .soc-networks {
+        display: none;
+    }
 }
