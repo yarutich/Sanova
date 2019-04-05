@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0 0 30px;
     text-align: center;
 }
+
 .section-title__h2:after {
     position: absolute;
     bottom: -30px;
@@ -27,11 +28,19 @@ h1, h2, h3, h4, h5, h6, ul {
     background: $blue;
 }
 
+.section-title__h2--big {
+	line-height: 50px;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 38px;
+}
 .img-responsive {
 	width: 100%;
 	height: auto;
 }
-
+.accent {
+	color: $pink;
+}
 .btn {
 	min-width: 232px;
 	max-width: 368px;
@@ -48,6 +57,13 @@ h1, h2, h3, h4, h5, h6, ul {
 		border: 1px solid rgba($pink, .8);
 		color: $white;
 	}
+}
+a.btn {
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 .tabs__button--current {
 	cursor: default;

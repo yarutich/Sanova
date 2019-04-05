@@ -1,0 +1,73 @@
+.footbar {
+    padding: 25px 0 70px 0;
+
+    color: $light;
+    background: $dark;
+}
+
+.footbar h3 {
+    color: $white;
+    font-family: $demi;
+    font-size: 18px;
+    margin: 40px 0;
+}
+
+.footbar a {
+    font-size: 14px;
+    color: #e5e5e5;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footbar ul li {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.contacts__logo {
+    width: 100%;
+    height: auto;
+}
+
+.contacts__address {
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.adress__icon {
+    padding-right: 14px;
+}
+
+.footbar .phone-numbers {
+    text-align: left;
+}
+
+.footbar.phone-numbers__item {
+    margin-bottom: 30px;
+}
+
+.phone-numbers .phone-numbers__item:last-child {
+    margin-bottom: 0;
+}
+
+.footbar .phone-numbers__icon {
+    margin-right: 10px;
+}
+
+.footbar .soc-networks {
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.soc-networks__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: $blue;
+}
+
+@media screen and (max-width: 575px) {
+    .topbar {
+        display: none;
+    }
+}
