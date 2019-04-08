@@ -1,20 +1,23 @@
 .about-company-text {
+  margin: 40px 0 20px 0; //mb20px + mt20px gallery items
+  padding: 50px 0 30px 0; //mb30px + last-child mb20px p
+  background: url(../../img/patterns/pattern.jpg) repeat;
   .section-title__h2 {
     margin-bottom: 50px;
     &:after {
       display: none;
     }
   }
+  p {
+    margin: 20px 0 10px 0;
+    color: #000;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 .section-title__h2--big {
   & + p {
     font-family: $demi;
-  }
-}
-.about-company p {
-  margin: 20px 0 10px 0;
-  color: #000;
-  &:last-child {
-    margin-bottom: 20px;
   }
 }
