@@ -1,72 +1,163 @@
 body {
-	font-family: $regular;
-	font-size: 16px;
+  font-family: $regular;
+  font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
-	padding: 0;
-	margin: 0;
-	color: $dark;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+  color: $dark;
 }
 
+.section-title__h1,
 .section-title__h2 {
-    text-align: center;
-    font-size: 36px;
-    position: relative;
-    margin: 0 0 30px;
-    text-align: center;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  margin: 0 0 30px;
+  text-align: center;
 }
 
 .section-title__h2:after {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    width: 110px;
-    height: 3px;
-    content: '';
-    transform: translateX(-50%);
-    background: $blue;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 110px;
+  height: 3px;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: $blue;
 }
 
 .section-title__h2--big {
-	line-height: 50px;
-	text-align: left;
-	text-transform: uppercase;
-	font-size: 38px;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 38px;
 }
+
 .img-responsive {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
+
 .accent {
-	color: $pink;
+  color: $pink;
 }
+
 .btn {
-	min-width: 232px;
-	max-width: 368px;
-	height: 54px;
-	font-family: $demi;
-	background: $white;
-	color: $pink;
-	border: 1px solid $pink;
-	border-radius: 100px;
-	outline: none;
-	cursor: pointer;
-	&:hover:not(.tabs__button--current) {
-		background: rgba($pink, .8);
-		border: 1px solid rgba($pink, .8);
-		color: $white;
-	}
+  min-width: 232px;
+  max-width: 368px;
+  height: 54px;
+  font-family: $demi;
+  background: $white;
+  color: $pink;
+  border: 1px solid $pink;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  &:hover:not(.tabs__button--current) {
+    background: rgba($pink, 0.8);
+    border: 1px solid rgba($pink, 0.8);
+    color: $white;
+  }
 }
-a.btn {
+
+a {
+  &.btn {
     text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-decoration: none;
+  }
 }
+
 .tabs__button--current {
-	cursor: default;
-	background: $pink;
-	color: $white;
+  cursor: default;
+  background: $pink;
+  color: $white;
 }
+
+// PAGES
+
+// ABOUT-COMPANY
+.about-company-page {
+  .section-title__h2 {
+    margin-top: 50px;
+  }
+  .section-title__h2--big {
+    &:after {
+      display: none;
+    }
+  }
+  .column-50 {
+    &:first-child {
+      padding-right: 24px;
+    }
+  }
+  img {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    vertical-align: middle;
+  }
+}
+
+.gallery {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.column-50 {
+  -ms-flex: 50%;
+  -webkit-box-flex: 50%;
+  -webkit-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .column-50 {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  [class|="column"] {
+    padding: 0 15px !important;
+  }
+}
+// /ABOUT-COMPANY
+
+
+// SERVICES
+
+// /SERVICES
