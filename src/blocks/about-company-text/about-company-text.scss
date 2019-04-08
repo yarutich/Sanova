@@ -1,0 +1,20 @@
+.about-company-text {
+  .section-title__h2 {
+    margin-bottom: 50px;
+    &:after {
+      display: none;
+    }
+  }
+}
+.section-title__h2--big {
+  & + p {
+    font-family: $demi;
+  }
+}
+.about-company p {
+  margin: 20px 0 10px 0;
+  color: #000;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
