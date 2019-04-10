@@ -74,6 +74,19 @@ ul {
   }
 }
 
+.btn-modal {
+  font-family: $demi;
+  color: $white;
+  background: $blue;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+    background: $white;
+  }
+}
+
 a {
   &.btn {
     text-align: center;
@@ -151,13 +164,38 @@ a {
     flex: 100%;
     max-width: 100%;
   }
+
   [class|="column"] {
     padding: 0 15px !important;
   }
 }
 // /ABOUT-COMPANY
 
-
 // SERVICES
-
+.services-page {
+  .services {
+    padding-bottom: 0;
+  }
+  .about-company-text {
+    margin-top: 0;
+  }
+  .services__btn {
+    display: none;
+  }
+}
 // /SERVICES
+
+// CONTACTS
+.services-page {
+  .services {
+    padding-bottom: 0;
+  }
+  .about-company-text {
+    margin-top: 0;
+  }
+  .services__btn {
+    display: none;
+  }
+}
+
+// /CONTACTS
