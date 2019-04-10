@@ -43,7 +43,7 @@
 	},
 	"dependencies": {
 		"@glidejs/glide": "^3.2.7",
-		"@types/": "glidejs/glide",
-		"smart-grid": "^2.1.2"
+		"smart-grid": "^2.1.2",
+		"tingle.js": "^0.14.0"
 	}
 }
